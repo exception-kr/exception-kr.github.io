@@ -1,8 +1,6 @@
 <span class="sr-only">{{ site.data.strings.social | default:"Social" }}{{ site.data.strings.colon }}</span>
 <ul>
   {% for platform in include.author.social %}
-	{% if platform.username %}
-		<li>{{ platform.name }} // {{ platform.username }}</li>
-	{% endif %}
+	<li>{{ platform.name }} // {{ platform.username }}</li>
   {% endfor %}
 </ul>
