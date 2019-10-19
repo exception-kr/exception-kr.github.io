@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: about
 title: Tech
 description: >
   **Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
