@@ -2,7 +2,7 @@
 <ul>
   {% for platform in include.author.social %}
 	{% if platform.username %}
-		{% include social-list-item.html platform="{{ platform.name }}" username="{{ platform.username }}" %}
+		<li>{{ platform.name }} // {{ platform.username }}</li>
 	{% endif %}
   {% endfor %}
 </ul>
