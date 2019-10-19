@@ -22,7 +22,7 @@ facebook:
 instagram:
   name: Instagram
   icon: icon-instagram
-  prepend: 'https://instagram.com/'
+  prepend: 'https://www.instagram.com/krexception'
 whatsapp:
   name: WhatsApp
   icon: icon-whatsapp
