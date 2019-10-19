@@ -13,6 +13,13 @@
       {% include social-list-item.html platform="github" username=github_username %}
     {% endif %}
   {% endunless %}
+  
+  {% unless include.author.social.instagram %}
+    {% assign github_username = author.instagram.username | default: author.instagram | default:site.instagram.username | default:site.instagram | default:site.instagram_username %}
+    {% if instagram_username %}
+      {% include social-list-item.html platform="instagram" username=instagram_username %}
+    {% endif %}
+  {% endunless %}
 
   {% for link in include.author.social %}
     {% include social-list-item.html platform=link.first username=link.last %}
