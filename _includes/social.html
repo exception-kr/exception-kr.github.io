@@ -1,13 +1,10 @@
 <span class="sr-only">{{ site.data.strings.social | default:"Social" }}{{ site.data.strings.colon }}</span>
 <ul class="1234">
-  {% unless include.author.social.instagram %}
-    {% assign github_username = author.instagram.username | default: author.instagram | default:site.instagram.username | default:site.instagram | default:site.instagram_username %}
-    {% if instagram_username %}
-      {% include social-list-item.html platform="instagram" username=instagram_username %}
-    {% endif %}
-  {% endunless %}
-
-  {% for link in include.author.social %}
-    <li>Test</li>
+  {% for platform in include.author.social %}
+    {% unless include.author.social[platform] %}
+		{% if author[platform].username %}
+		  {% include social-list-item.html platform="{{ platform }}" username="{{ author[platform].username }}" %}
+		{% endif %}
+	  {% endunless %}
   {% endfor %}
 </ul>
