@@ -26,7 +26,9 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:    
-    instagram:       krexception
+    instagram:       
+        name : instagram
+        username : krexception
     # twitter:         <username>
     # github:          <username>
     # email:           mailto:<mail@domain.tld>
