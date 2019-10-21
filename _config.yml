@@ -303,10 +303,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-social:
-  name:                퐝 성운
-  links:
-    - https://instagram.com/krexception
+# social:
+#   name:                퐝 성운
+#   links:
+#     - https://instagram.com/krexception
 
 
 # Other Plugins
