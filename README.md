@@ -14,6 +14,7 @@ Hydejack's cover page on a variety of screens.
 
 There are two versions of **Hydejack**: The base version is free, while features that are specific to *professionals* are a payed upgrade.
 
+
 |                        | Free           | PRO      |
 |:-----------------------|:--------------:|:--------:|
 | Blog                   | &#x2714;       | &#x2714; |
