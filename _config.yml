@@ -33,7 +33,7 @@ tagline:               >
   Open `_config.yml` to edit this text.
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [tech, life, unboxing]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -42,8 +42,8 @@ logo:                  /assets/icons/owner-avatar.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                퐝성운
+  email:               creator@exception.kr
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -52,7 +52,7 @@ menu:
   - title :  Tech
     url : /tech
   - title : Life
-    url : /life  
+    url : /life
   - title : Unboxing
     url : /unboxing
   # - title:             Hydejack
