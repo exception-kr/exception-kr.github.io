@@ -8,8 +8,7 @@
           {% if forloop.first %}id="_navigation"{% endif %}
           href="{% include smart-url.txt url=url %}"
           class="sidebar-nav-item{% if page.url contains url %} active{% endif %}"
-          {% if node.rel %}rel="{{ node.rel }}"{% endif %}
-        >
+          {% if node.rel %}rel="{{ node.rel }}"{% endif %} >
           {{ node.name | default:node.title }}
         </a>
       </li>
@@ -26,8 +25,7 @@
             {% if forloop.first %}id="_navigation"{% endif %}
             href="{{ node.url | relative_url }}"
             class="sidebar-nav-item{% if page.url contains node.url %} active{% endif %}"
-            {% if node.rel %}rel="{{ node.rel }}"{% endif %}
-            >
+            {% if node.rel %}rel="{{ node.rel }}"{% endif %} >
             {{ node.title }}
           </a>
         </li>
