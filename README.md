@@ -1,5 +1,4 @@
 # Hydejack
-
 The "Best Jekyll Theme by a Mile".
 
 
