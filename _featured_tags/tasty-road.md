@@ -1,8 +1,7 @@
 ---
 layout: list
 title: 맛집
-slug: tasty-road
-category: life
+slug: life-tasty-road
 menu: false
 order: 1
 ---
