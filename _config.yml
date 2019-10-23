@@ -24,13 +24,11 @@ title:                 Pwang's Blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
-  **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
+  "Welcome Pwang's Blog !"
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+  "Welcome Pwang's Blog !"
 
 # A list of keywords for your blog
 keywords:              [tech, life, unboxing]
@@ -55,14 +53,6 @@ menu:
     url : /life
   - title : Unboxing
     url : /unboxing
-  # - title:             Hydejack
-  #   url:               /hydejack/
-  # - title:             Hyde
-  #   url:               /hyde/
-  # - title:             Documentation
-  #   url:               /docs/
-  # - title:             About
-  #   url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -156,7 +146,7 @@ disqus:                pwang-blog
 hydejack:
   # Configure the order of complementary content on blog posts
   # post_addons:         [about, newsletter, related, random]
-  post_addons:         [about, newsletter, related, random]
+  post_addons:         [about, related, newsletter, random]
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other]
