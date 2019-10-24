@@ -4,6 +4,7 @@ title: '[역삼] 국물이 끝내줬던, 한방대가 삼계탕 닭한마리 !'
 comments: true
 description: >
     퇴근 후 동료들과 함께 밥먹으러 들리게 되는데...
+categories: [life]
 tags: [life-tasty-road, life-yeok-sam]
 ---
 
