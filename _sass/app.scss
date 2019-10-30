@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+$app-default-visual-background-color: #d0d0ce;
+$app-default-header-text-color: #2d2d29;
+
+$tech-default-header-background-color: #131a2d;
+$tech-default-header-text-color: #d7d9dc;
+
+$life-default-header-background-color: #a7c9f594;
+$life-default-header-text-color: #3e597d;
+
+.site-header {
+  border: none;
+  background: $app-default-visual-background-color;
+  padding : .5rem 1.8rem;
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 0;
+
+  &.tech {
+    background: $tech-default-header-background-color;
+    
+    .site-title {
+      color: $tech-default-header-text-color;
+      visibility: visible;
+    }  
+  }
+  
+  &.life {
+    background: $life-default-header-background-color;
+  
+    .site-title {
+      color: $life-default-header-text-color;
+      visibility: visible;
+    }
+  }
+
+  .site-title {
+    visibility: hidden;
+  }  
+}
+
+.site-title {
+  float: initial;
+}
+
+.site-nav {
+  float: initial;
+}
