@@ -1,7 +1,6 @@
 ---
 permalink: /tech
-layout: page
+layout: post-list
 title: TECH
+category: tech
 ---
-
-Contents!

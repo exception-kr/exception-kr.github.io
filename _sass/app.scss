@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$app-default-visual-background-color: #d0d0ce;
+$app-introduce-background-color: #f3eee7;
 $app-default-header-text-color: #2d2d29;
 
 $tech-default-header-background-color: #131a2d;
@@ -9,10 +9,12 @@ $tech-default-header-text-color: #d7d9dc;
 $life-default-header-background-color: #a7c9f594;
 $life-default-header-text-color: #3e597d;
 
+$app-default-layout-padding: 1rem 1.8rem;
+
 .site-header {
   border: none;
-  background: $app-default-visual-background-color;
-  padding : .5rem 1.8rem;
+  background: $app-introduce-background-color;
+  padding : $app-default-layout-padding;
   display : flex;
   justify-content: space-between;
   align-items: center;
@@ -47,4 +49,95 @@ $life-default-header-text-color: #3e597d;
 
 .site-nav {
   float: initial;
+}
+
+.page-content {
+  padding : 0;
+}
+
+.app-introduce {
+  background: $app-introduce-background-color;
+  text-align: center;
+
+  .title {
+    color: #7f7927b5;
+    font-weight: bold;
+  }
+
+  .description {
+    color: #71716e;
+  }
+}
+
+.wrapper {
+  padding : 30px;
+}
+
+.copyright {
+  color : #868788;
+  margin-bottom: 0;
+  font-size : 12px;
+}
+
+.site-footer {
+  background: #454954;
+  padding: $app-default-layout-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  hr {
+    border: none;
+    border-top: 1px solid #726c73;
+    margin: 1rem 0;
+  }
+}
+
+.contact-list {
+  margin: 0;
+
+  li {
+    float: left;
+    margin-right: 1rem;
+
+    a {
+      color: #d6d4d4;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.post-list-head {
+  width: 80px;
+  font-weight: bold;
+}
+
+.tech-post-wrapper {
+  background: red;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.post-date {
+  color: #656565;
+  font-size: 12px;
+}
+
+.post-title {
+  margin: 0 0 .5rem 0;
+  font-size: 20px;
+
+  a {
+    color: #0c2950;
+    line-height: 1.5rem;
+    // ToDO: ellipsis
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    // white-space: nowrap;
+  }
 }

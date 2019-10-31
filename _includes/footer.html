@@ -1,35 +1,19 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="site-footer">
+    <ul class="contact-list">
+        {%- if site.email -%}
+          <li>
+            <a href="mailto:{{ site.email }}">E-Mail</a>
+          </li>
+        {%- endif -%}
 
-  <div class="wrapper">
+        {%- if site.instagram_username -%}
+          <li>
+              <a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" target="_blank">Instagram</a>
+          </li>
+        {%- endif -%}
+    </ul>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+    <p class="copyright">
+        Copyright &copy; {{ 'now' | date: "%Y" }}.
+    </p>
 </footer>

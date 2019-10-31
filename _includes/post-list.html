@@ -1,0 +1,29 @@
+{%- assign date_format = site.minima.date_format | default: "%Y.%m.%-d" -%}
+{%- assign categorized_posts = site.posts | where: "category", include.category -%}
+
+<div class="wrapper d-flex">
+    <h2 class="post-list-head">{{ include.category | upcase }}</h2>
+    
+    {%- if categorized_posts.size > 0 -%}
+      <ul class="post-list">
+        {%- for post in categorized_posts -%}
+          <li>
+            <h3 class="post-title">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            <span class="post-date">{{ post.date | date: date_format }}</span>
+      
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%} 
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <p>등록된 글이 없습니다.</p>
+    {%- endif -%}
+
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+  </div>
