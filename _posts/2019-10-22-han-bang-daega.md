@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '[역삼] 국물이 끝내줬던, 한방대가 삼계탕 닭한마리 !'
+title: '국물이 끝내줬던, 역삼동 한방대가 삼계탕 닭한마리 !'
 comments: true
 category: life
 description: >
