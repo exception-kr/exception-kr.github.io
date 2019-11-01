@@ -32,7 +32,6 @@ disqus:
 lang: ko_KR
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
