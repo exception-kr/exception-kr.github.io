@@ -33,7 +33,6 @@ lang: ko_KR
 
 # Build settings
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
