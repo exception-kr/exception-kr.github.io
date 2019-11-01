@@ -1,0 +1,35 @@
+{%- assign date_format = site.minima.date_format | default: "%Y.%m.%-d" -%}
+
+{%- if include.posts.size > 0 -%}
+  <ul class="post-card-container">
+    {%- for post in include.posts -%} 
+      <li class="post-card">
+        {%- if post.thumbnail_url -%}
+          <img src="{{ post.thumbnail_url }}" alt="{{ post.title }}" />
+        {%- endif -%}
+
+        <div class="post-info">
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          <span class="post-date">{{ post.date | date: date_format }}</span>
+    
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- else -%}
+  <div class="empty-message">
+    <i class="icon icon-basic-clessidre"></i>
+    <p class="mt-1">준비된 게시글이 없습니다</p>
+  </div>
+{%- endif -%}
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+
+  

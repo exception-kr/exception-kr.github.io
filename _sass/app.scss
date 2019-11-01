@@ -6,8 +6,8 @@ $app-default-header-text-color: #2d2d29;
 $tech-default-header-background-color: #131a2d;
 $tech-default-header-text-color: #d7d9dc;
 
-$life-default-header-background-color: #a7c9f594;
-$life-default-header-text-color: #3e597d;
+$life-default-header-background-color: #e7ecf3;
+$life-default-header-text-color: #476491;
 
 $app-default-layout-padding: 1rem 1.8rem;
 
@@ -26,7 +26,11 @@ $app-default-layout-padding: 1rem 1.8rem;
     .site-title {
       color: $tech-default-header-text-color;
       visibility: visible;
-    }  
+    }
+    
+    .page-link {
+      color: $tech-default-header-text-color;
+    }
   }
   
   &.life {
@@ -40,11 +44,12 @@ $app-default-layout-padding: 1rem 1.8rem;
 
   .site-title {
     visibility: hidden;
-  }  
+  }
 }
 
 .site-title {
   float: initial;
+  font-weight: bold;
 }
 
 .site-nav {
@@ -110,34 +115,115 @@ $app-default-layout-padding: 1rem 1.8rem;
   }
 }
 
-.post-list-head {
-  width: 80px;
+// home > latest post
+.latest-post-head {
   font-weight: bold;
-}
+  text-align: center;
 
-.tech-post-wrapper {
-  background: red;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.post-date {
-  color: #656565;
-  font-size: 12px;
-}
-
-.post-title {
-  margin: 0 0 .5rem 0;
-  font-size: 20px;
-
-  a {
-    color: #0c2950;
-    line-height: 1.5rem;
-    // ToDO: ellipsis
-    // text-overflow: ellipsis;
-    // overflow: hidden;
-    // white-space: nowrap;
+  .icon {
+    vertical-align: middle;
+    margin-right: .5rem;
   }
+}
+
+.latest-post-container {
+  .read-more-btn-wrapper {
+    clear: both;
+    text-align: center;
+
+    a {
+      color: #fff;
+      background: black;
+      padding: .8rem 1rem;
+      font-weight: bold;
+
+      &:hover {
+        background: #020202de;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .empty-message {
+    text-align: center;
+    color: #585757;
+    padding: 0 .5rem 2rem 0;
+
+    .icon {
+      font-size: 2rem;
+
+    }
+  }
+}
+
+.latest-life-post-wrapper {
+  background: #f3efeb36;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+
+// post card
+.post-card-container {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 3.5rem;
+
+  .post-card {
+    border : 1px solid #e1e8ed;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 18rem;
+    height: 20rem;
+    float: left;
+    margin: 0 2rem 2rem 0;
+    position: relative;
+  }
+
+  .post-title {
+    margin: 0 0 .5rem 0;
+    font-size: 18px;
+
+    a {
+      color: #0b0c0e;
+      line-height: 1.5rem;
+      // ToDO: ellipsis
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      // white-space: nowrap;
+    }
+  }
+
+  .post-info {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: .8rem;
+  }
+
+  .post-date {
+    color: #656565;
+    font-size: 12px;
+  }
+}
+
+// base
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
 }

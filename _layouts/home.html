@@ -2,15 +2,34 @@
 layout: default
 ---
 
-<div>
-  <div class="app-introduce">
-    <div class="wrapper">
-        <h1 class="title">{{ site.title | escape }}</h1>
-        <p class="description">{{- site.description | escape -}}</p>
-    </div>      
-  </div>
-
+<div class="app-introduce">
+  <div class="wrapper">
+      <h1 class="title">{{ site.title | escape }}</h1>
+      <p class="description">{{- site.description | escape -}}</p>
+  </div>      
+</div>
     
-  {%- include post-list.html category="life" -%}
-  {%- include post-list.html category="tech" -%}
+<div  class="latest-post-container">
+  <div class="latest-life-post-wrapper">
+    <h2 class="latest-post-head">
+      <i class="icon icon-ecommerce-megaphone"></i>LIFE
+    </h2>
+
+    {%- assign life_posts = site.posts | where: "category", "life" -%}
+    {%- include post-card-list.html posts=life_posts -%}
+
+    <div class="read-more-btn-wrapper">
+      <a href="/life">Go to &rarr;</a>
+    </div>
+  </div>
+  
+  <div class="mt-5">
+    <h2 class="latest-post-head">
+      <i class="icon icon-basic-lightbulb"></i>TECH
+    </h2>
+
+    {%- assign tech_posts = site.posts | where: "category", "tech" -%}
+    {%- include post-card-list.html posts=tech_posts -%}
+  
+  </div>
 </div>
