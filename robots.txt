@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://blog.exception.kr/sitemap.xml
