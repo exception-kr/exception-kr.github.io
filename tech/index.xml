@@ -5,10 +5,6 @@
     <link>https://blog.exception.kr/tech/</link>
     <description>Recent content in TECH on 퐝군의 방탕일지</description>
     <generator>Hugo -- gohugo.io</generator>
-<<<<<<< HEAD
-=======
-    <language>ko-kr</language>
->>>>>>> 01f99871d7db3c4bf6eccd2357bc3fe24a72f87d
     <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.exception.kr/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -16,17 +12,10 @@
     
     <item>
       <title>Sample1</title>
-<<<<<<< HEAD
       <link>https://blog.exception.kr/tech/sample1/</link>
       <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://blog.exception.kr/tech/sample1/</guid>
-=======
-      <link>https://blog.exception.kr/tech/posts/sample1/</link>
-      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.exception.kr/tech/posts/sample1/</guid>
->>>>>>> 01f99871d7db3c4bf6eccd2357bc3fe24a72f87d
       <description>Tech Sample1</description>
     </item>
     
