@@ -5,26 +5,28 @@
     <link>https://blog.exception.kr/</link>
     <description>Recent content on 퐝군의 방탕일지</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <managingEditor>creator@exception.kr (퐝군)</managingEditor>
+    <webMaster>creator@exception.kr (퐝군)</webMaster>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.exception.kr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>TECH</title>
-      <link>https://blog.exception.kr/tech/</link>
-      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.exception.kr/tech/</guid>
+      <title>LIFE</title>
+      <link>https://blog.exception.kr/life/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <author>creator@exception.kr (퐝군)</author>
+      <guid>https://blog.exception.kr/life/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>LIFE</title>
-      <link>https://blog.exception.kr/life/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.exception.kr/life/</guid>
+      <title>TECH</title>
+      <link>https://blog.exception.kr/tech/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      <author>creator@exception.kr (퐝군)</author>
+      <guid>https://blog.exception.kr/tech/</guid>
       <description></description>
     </item>
     
