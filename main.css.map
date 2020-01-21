@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/krexception/Documents/v3",
+	"sourceRoot": "/Users/mz02-hsw/Workspace/v3",
 	"sources": [
 		"assets/scss/main.scss",
 		"assets/scss/_variables.scss",
